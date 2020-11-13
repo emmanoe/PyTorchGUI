@@ -1,0 +1,174 @@
+{
+    "nodes": [
+        {
+            "y": 213.43080000000003, 
+            "x": -457.9948, 
+            "class": "Unfold", 
+            "uuid": "7ed638d1-4193-4c3a-af1c-941b005840c9"
+        }, 
+        {
+            "y": 60.0, 
+            "x": -191.0, 
+            "class": "Fold", 
+            "uuid": "db934a47-12b5-47b0-8a54-7195c2359bcd"
+        }, 
+        {
+            "y": -217.7409, 
+            "x": -475.461, 
+            "class": "MaxPool1d", 
+            "uuid": "a1d89336-ec9d-4e27-8f3b-f918157e359d"
+        }, 
+        {
+            "y": 83.0, 
+            "x": -322.0, 
+            "class": "MaxPool2d", 
+            "uuid": "2affe05e-add7-423d-b165-7e73835dfbd3"
+        }, 
+        {
+            "y": 39.0, 
+            "x": -452.3205, 
+            "class": "MaxPool3d", 
+            "uuid": "ba6c9bb2-9d34-439c-94fe-886b89600e26"
+        }, 
+        {
+            "y": 320.4588999999999, 
+            "x": -453.66390000000007, 
+            "class": "AvgPool1d", 
+            "uuid": "7f80b16d-c575-48da-af5e-e2eeb06aff99"
+        }, 
+        {
+            "y": -57.856399999999994, 
+            "x": -472.923, 
+            "class": "AvgPool2d", 
+            "uuid": "ea6e9f6b-fccf-46dc-8f7c-774d636a02b4"
+        }, 
+        {
+            "y": -39.0, 
+            "x": -318.0, 
+            "class": "AvgPool3d", 
+            "uuid": "4e5c19a1-3955-4bfa-beed-3ba445e12524"
+        }, 
+        {
+            "y": 239.0, 
+            "x": -54.0, 
+            "class": "FractionalMaxPool2d", 
+            "uuid": "b4ee1b3f-a515-4f30-9659-64c5e5706201"
+        }, 
+        {
+            "y": 325.0, 
+            "x": -17.0, 
+            "class": "LPPool1d", 
+            "uuid": "9e745035-7bc8-463d-8810-dc3a5e7142a3"
+        }, 
+        {
+            "y": 112.96669999999997, 
+            "x": -451.9282, 
+            "class": "LPPool2d", 
+            "uuid": "d43acc59-4498-480c-9c5c-4b08df2ab422"
+        }, 
+        {
+            "y": -142.0, 
+            "x": -473.0, 
+            "class": "AdaptiveMaxPool1d", 
+            "uuid": "5a185789-c159-47f9-a6e1-0b5d40433978"
+        }, 
+        {
+            "y": -227.73999999999995, 
+            "x": -289.57, 
+            "class": "AdaptiveMaxPool2d", 
+            "uuid": "b8bdb2f1-6a21-4ff2-91ca-9a72c9950f14"
+        }, 
+        {
+            "y": 145.0, 
+            "x": -16.0, 
+            "class": "AdaptiveMaxPool3d", 
+            "uuid": "f946f1bb-4956-4315-91e7-bf3e65f66b72"
+        }, 
+        {
+            "y": -35.0, 
+            "x": -93.0, 
+            "class": "AdaptiveAvgPool1d", 
+            "uuid": "2a9fcc5e-ee2a-468a-a697-a065fda89008"
+        }
+    ], 
+    "edges": [
+        {
+            "source_nodeId": "7f80b16d-c575-48da-af5e-e2eeb06aff99", 
+            "target_nodeId": "2affe05e-add7-423d-b165-7e73835dfbd3", 
+            "target_name": "Input", 
+            "source_name": "Output"
+        }, 
+        {
+            "source_nodeId": "5a185789-c159-47f9-a6e1-0b5d40433978", 
+            "target_nodeId": "4e5c19a1-3955-4bfa-beed-3ba445e12524", 
+            "target_name": "Input", 
+            "source_name": "Output"
+        }, 
+        {
+            "source_nodeId": "7ed638d1-4193-4c3a-af1c-941b005840c9", 
+            "target_nodeId": "2affe05e-add7-423d-b165-7e73835dfbd3", 
+            "target_name": "Input", 
+            "source_name": "Output"
+        }, 
+        {
+            "source_nodeId": "d43acc59-4498-480c-9c5c-4b08df2ab422", 
+            "target_nodeId": "2affe05e-add7-423d-b165-7e73835dfbd3", 
+            "target_name": "Input", 
+            "source_name": "Output"
+        }, 
+        {
+            "source_nodeId": "ba6c9bb2-9d34-439c-94fe-886b89600e26", 
+            "target_nodeId": "4e5c19a1-3955-4bfa-beed-3ba445e12524", 
+            "target_name": "Input", 
+            "source_name": "Output"
+        }, 
+        {
+            "source_nodeId": "ea6e9f6b-fccf-46dc-8f7c-774d636a02b4", 
+            "target_nodeId": "4e5c19a1-3955-4bfa-beed-3ba445e12524", 
+            "target_name": "Input", 
+            "source_name": "Output"
+        }, 
+        {
+            "source_nodeId": "4e5c19a1-3955-4bfa-beed-3ba445e12524", 
+            "target_nodeId": "db934a47-12b5-47b0-8a54-7195c2359bcd", 
+            "target_name": "Input", 
+            "source_name": "Output"
+        }, 
+        {
+            "source_nodeId": "2affe05e-add7-423d-b165-7e73835dfbd3", 
+            "target_nodeId": "db934a47-12b5-47b0-8a54-7195c2359bcd", 
+            "target_name": "Input", 
+            "source_name": "Output"
+        }, 
+        {
+            "source_nodeId": "db934a47-12b5-47b0-8a54-7195c2359bcd", 
+            "target_nodeId": "b4ee1b3f-a515-4f30-9659-64c5e5706201", 
+            "target_name": "Input", 
+            "source_name": "Output"
+        }, 
+        {
+            "source_nodeId": "db934a47-12b5-47b0-8a54-7195c2359bcd", 
+            "target_nodeId": "f946f1bb-4956-4315-91e7-bf3e65f66b72", 
+            "target_name": "Input", 
+            "source_name": "Output"
+        }, 
+        {
+            "source_nodeId": "db934a47-12b5-47b0-8a54-7195c2359bcd", 
+            "target_nodeId": "2a9fcc5e-ee2a-468a-a697-a065fda89008", 
+            "target_name": "Input", 
+            "source_name": "Output"
+        }, 
+        {
+            "source_nodeId": "b8bdb2f1-6a21-4ff2-91ca-9a72c9950f14", 
+            "target_nodeId": "2a9fcc5e-ee2a-468a-a697-a065fda89008", 
+            "target_name": "Input", 
+            "source_name": "Output"
+        }, 
+        {
+            "source_nodeId": "a1d89336-ec9d-4e27-8f3b-f918157e359d", 
+            "target_nodeId": "2a9fcc5e-ee2a-468a-a697-a065fda89008", 
+            "target_name": "Input", 
+            "source_name": "Output"
+        }
+    ]
+}

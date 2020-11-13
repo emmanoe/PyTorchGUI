@@ -1,0 +1,211 @@
+{
+ "Conv1d": {
+  "in_channels": {"type":"number", "default":null},
+  "out_channels": {"type":"number", "default":null},
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":1},
+  "padding": {"type":"number", "default":0},
+  "dilation": {"type":"number", "default":1},
+  "groups": {"type":"number", "default":1},
+  "bias": {"type":"boolean", "default":true}
+ },
+ "Conv2d": {
+  "in_channels": {"type":"number", "default":null},
+  "out_channels": {"type":"number", "default":null},
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":1},
+  "padding": {"type":"number", "default":0},
+  "dilation": {"type":"number", "default":1},
+  "groups": {"type":"number", "default":1},
+  "bias": {"type":"boolean", "default":true}
+ },
+ "Conv3d": {
+  "in_channels": {"type":"number", "default":null},
+  "out_channels": {"type":"number", "default":null},
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":1},
+  "padding": {"type":"number", "default":0},
+  "dilation": {"type":"number", "default":1},
+  "groups": {"type":"number", "default":1},
+  "bias": {"type":"boolean", "default":true}
+ },
+ "ConvTranspose1d": {
+  "in_channels": {"type":"number", "default":null},
+  "out_channels": {"type":"number", "default":null},
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":1},
+  "padding": {"type":"number", "default":0},
+  "output_padding": {"type":"number", "default":0},
+  "groups": {"type":"number", "default":1},
+  "bias": {"type":"boolean", "default":true},
+  "dilation": {"type":"number", "default":1}
+ },
+ "ConvTranspose2d": {
+  "in_channels": {"type":"number", "default":null},
+  "out_channels": {"type":"number", "default":null},
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":1},
+  "padding": {"type":"number", "default":0},
+  "output_padding": {"type":"number", "default":0},
+  "groups": {"type":"number", "default":1},
+  "bias": {"type":"boolean", "default":true},
+  "dilation": {"type":"number", "default":1}
+ },
+ "ConvTranspose3d": {
+  "in_channels": {"type":"number", "default":null},
+  "out_channels": {"type":"number", "default":null},
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":1},
+  "padding": {"type":"number", "default":0},
+  "output_padding": {"type":"number", "default":0},
+  "groups": {"type":"number", "default":1},
+  "bias": {"type":"boolean", "default":true},
+  "dilation": {"type":"number", "default":1}
+ },
+ "Unfold": {
+  "kernel_size": {"type":"number", "default":null},
+  "dilation": {"type":"number", "default":1},
+  "padding": {"type":"number", "default":0},
+  "stride": {"type":"number", "default":1}
+ },
+ "Fold": {
+  "output_size": {"type":"number", "default":null},
+  "kernel_size": {"type":"number", "default":null},
+  "dilation": {"type":"number", "default":1},
+  "padding": {"type":"number", "default":0},
+  "stride": {"type":"number", "default":1}
+ },
+ "MaxPool1d": {
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":null},
+  "padding": {"type":"number", "default":0},
+  "dilation": {"type":"number", "default":1},
+  "return_indices":{"type":"boolean", "default":false},
+  "ceil_mode":{"type":"boolean", "default":false}
+ },
+ "MaxPool2d": {
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":null},
+  "padding": {"type":"number", "default":0},
+  "dilation": {"type":"number", "default":1},
+  "return_indices":{"type":"boolean", "default":false},
+  "ceil_mode":{"type":"boolean", "default":false}
+ },
+ "MaxPool3d": {
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":null},
+  "padding": {"type":"number", "default":0},
+  "dilation": {"type":"number", "default":1},
+  "return_indices":{"type":"boolean", "default":false},
+  "ceil_mode":{"type":"boolean", "default":false}
+ },
+ "MaxUnpool1d": {
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":null},
+  "padding": {"type":"number", "default":0}
+ },
+ "MaxUnpool2d": {
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":null},
+  "padding": {"type":"number", "default":0}
+ },
+ "MaxUnpool3d": {
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":null},
+  "padding": {"type":"number", "default":0}
+ },
+ "AvgPool1d": {
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":null},
+  "padding": {"type":"number", "default":0},
+  "ceil_mode":{"type":"boolean", "default":false},
+  "count_include_pad":{"type":"boolean", "default":true}
+ },
+ "AvgPool2d": {
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":null},
+  "padding": {"type":"number", "default":0},
+  "ceil_mode":{"type":"boolean", "default":false},
+  "count_include_pad":{"type":"boolean", "default":true}
+ },
+ "AvgPool3d": {
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":null},
+  "padding": {"type":"number", "default":0},
+  "ceil_mode":{"type":"boolean", "default":false},
+  "count_include_pad":{"type":"boolean", "default":true}
+ },
+ "FractionalMaxPool2d": {
+  "kernel_size": {"type":"number", "default":null},
+  "output_size": {"type":"number", "default":null},
+  "output_ratio": {"type":"number", "default":null},
+  "return_indices":{"type":"boolean", "default":false},
+  "_random_samples":{"type":"boolean", "default":false}
+ },
+ "LPPool1d": {
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":null},
+  "ceil_mode":{"type":"boolean", "default":false}
+ },
+ "LPPool2d": {
+  "kernel_size": {"type":"number", "default":null},
+  "stride": {"type":"number", "default":null},
+  "ceil_mode":{"type":"boolean", "default":false}
+ },
+ "AdaptiveMaxPool1d": {
+  "output_size": {"type":"number", "default":null},
+  "return_indices":{"type":"boolean", "default":false}
+ },
+ "AdaptiveMaxPool2d": {
+  "output_size": {"type":"number", "default":null},
+  "return_indices":{"type":"boolean", "default":false}
+ },
+ "AdaptiveMaxPool3d": {
+  "output_size": {"type":"number", "default":null},
+  "return_indices":{"type":"boolean", "default":false}
+ },
+ "AdaptiveAvgPool1d": {
+  "output_size": {"type":"number", "default":null}
+ },
+ "AdaptiveAvgPool2d": {
+  "output_size": {"type":"number", "default":null}
+ },
+ "AdaptiveAvgPool3d": {
+  "output_size": {"type":"number", "default":null}
+ },
+ "ReflectionPad1d": {
+  "padding": {"type":"number", "default":null}
+ },
+ "ReflectionPad2d": {
+  "padding": {"type":"number", "default":null}
+ },
+ "ReplicationPad1d": {
+  "padding": {"type":"number", "default":null}
+ },
+ "ReplicationPad2d": {
+  "padding": {"type":"number", "default":null}
+ },
+ "ReplicationPad3d": {
+  "padding": {"type":"number", "default":null}
+ },
+ "ZeroPad2d": {
+  "padding": {"type":"number", "default":null}
+ },
+ "ConstantPad1d": {
+  "padding": {"type":"number", "default":null},
+  "value": {"type":"number", "default":null}
+ },
+ "ConstantPad2d": {
+  "padding": {"type":"number", "default":null},
+  "value": {"type":"number", "default":null}
+ },
+ "ConstantPad3d": {
+  "padding": {"type":"number", "default":null},
+  "value": {"type":"number", "default":null}
+ },
+ "Linear": {
+  "in_features":{"type":"number", "default":null},
+  "out_features":{"type":"number", "default":null},
+  "bias": {"type":"boolean", "default":true}
+ }
+}

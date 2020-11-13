@@ -1,0 +1,27 @@
+{
+ "Adadelta": {
+  "lr": {"type":"float", "default":1.0},
+  "rho": {"type":"float", "default":0.9},
+  "eps": {"type":"float", "default":0.000001},
+  "weight_decay": {"type":"float", "default":0.0}
+ },
+ "Adadegrad": {
+  "lr": {"type":"float", "default":0.01},
+  "lr_decay": {"type":"float", "default":0.0},
+  "weight_decay": {"type":"float", "default":0.0},
+  "initial_accumulator_value": {"type":"float", "default":0.0}
+ },
+ "Adam": {
+  "lr": {"type":"float", "default":0.001},
+  "eps": {"type":"float", "default":0.00000001},
+  "weight_decay": {"type":"float", "default":0.0},
+  "amsgrad": {"type":"boolean", "default":false}
+ },
+ "SGD": {
+  "lr": {"type":"float", "default":0.001},
+  "momentum": {"type":"float", "default":0.0},
+  "dampening": {"type":"float", "default":0.0},
+  "weight_decay": {"type":"float", "default":0.0},
+  "nesterov": {"type":"boolean", "default":false}
+ }
+}

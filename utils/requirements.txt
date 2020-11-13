@@ -1,0 +1,11 @@
+wheel
+torch
+torchvision==0.2.1
+tqdm
+setuptools
+matplotlib
+pandas
+hiddenlayer
+PySide
+pydot
+appdirs

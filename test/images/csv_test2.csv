@@ -1,0 +1,7 @@
+Type,name,p1,p2,p3,
+Conv2d,conv1,3,6,5
+Pool,pool1,2,2,
+Conv2d,conv2,6,16,5
+Linear,fc1,400,120,
+Linear,fc2,120,84,
+Linear,fc3,84,10,

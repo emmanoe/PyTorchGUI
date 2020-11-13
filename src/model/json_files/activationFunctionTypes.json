@@ -1,0 +1,73 @@
+{
+ "ELU": {
+  "alpha": {"type":"float", "default":1.0},
+  "inplace": {"type":"boolean", "default":false}
+ },
+ "Hardshrink": {
+  "lambd": {"type":"float", "default":0.5}
+ },
+ "Hardtanh": {
+  "min_val": {"type":"float", "default":-1.0},
+  "max_val": {"type":"float", "default":1.0},
+  "inplace": {"type":"boolean", "default":false}
+ },
+ "LeakyReLU": {
+  "negative_slope": {"type":"float", "default":0.01},
+  "inplace": {"type":"boolean", "default":false}
+ },
+ "LogSigmoid": {
+ },
+ "PReLU": {
+  "num_parameters": {"type":"number", "default":1},
+  "init": {"type":"float", "default":0.25}
+ },
+ "ReLU": {
+  "inplace": {"type":"boolean", "default":false}
+ },
+ "ReLU6": {
+  "inplace": {"type":"boolean", "default":false}
+ },
+ "RReLU": {
+  "lower": {"type":"float", "default":0.125},
+  "upper": {"type":"float", "default":0.3333333333333333},
+  "inplace": {"type":"boolean", "default":false}
+ },
+ "SELU": {
+  "inplace": {"type":"boolean", "default":false}
+ },
+ "CELU": {
+  "alpha": {"type":"float", "default":1.0},
+  "inplace": {"type":"boolean", "default":false}
+ },
+ "Sigmoid": {
+ },
+ "Softplus": {
+  "beta": {"type":"number", "default":1},
+  "threshold": {"type":"number", "default":20}
+ },
+ "Softshrink": {
+  "lambd": {"type":"float", "default":0.5}
+ },
+ "Softsign": {
+ },
+ "Tanh": {
+ },
+ "Tanhshrink": {
+ },
+ "Threshold": {
+  "threshold": {"type":"float", "default":null},
+  "value": {"type":"number", "default":null},
+  "inplace": {"type":"boolean", "default":false}
+ },
+ "Softmin": {
+  "dim": {"type":"number", "default":null}
+ },
+ "Softmax": {
+  "dim": {"type":"number", "default":null}
+ },
+ "Softmax2d": {
+ },
+ "LogSoftmax": {
+  "dim": {"type":"number", "default":null}
+ }
+}

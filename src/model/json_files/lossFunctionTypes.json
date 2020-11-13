@@ -1,0 +1,19 @@
+{
+ "L1Loss": {
+  "reduce": {"type":"boolean", "default":true},
+  "reduction": {"type":"str", "default":"mean"}
+ },
+ "MSELoss": {
+  "reduce": {"type":"boolean", "default":true},
+  "reduction": {"type":"str", "default":"mean"}
+ },
+ "CrossEntropyLoss": {
+  "ignore_index": {"type":"number", "default":-100},
+  "reduce": {"type":"boolean", "default":true},
+  "reduction": {"type":"str", "default":"mean"}
+ },
+ "CTCLoss": {
+  "blank": {"type":"number", "default":0},
+  "reduction": {"type":"str", "default":"mean"}
+  }
+}

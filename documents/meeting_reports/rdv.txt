@@ -1,0 +1,37 @@
+Lister tous les existing (les outils)...
+
+	Avant remettre dans le contexte de facon explicite
+	Dérouler la présentation des outils chronologiquement caffe - Expresso puis Pytorch
+
+Spell sur emacs correction orthographique de textes
+
+Exprimer avant inconvéniant
+
+Visualisation et Edition de graphe pas pareil
+
+Evaluer la quantité de travail et si c'est jouable.
+
+Faire prototype
+
+Capture image expresso
+
+10 pages minimum
+
+Element fondamentale : le temps !
+
+Discuter du temps dans le non-fonctionnelle ( barre de progression )
+	tache de fond (message quand l'execution est terminée)
+
+Parler de la fonction plateforme multi-plateforme (librairie, ou plusieurs version..)
+
+retirer tous ce qui est bdd
+
+Il manque la collection de modele !! fonctionnel ! (sauvegarde, édition...) AlexNet GoogleNet utilisation outils de deep learning aspect model ?
+
+Faire test dans cahier des besoins : exemple de pyTorch marche ! test de temps.
+
+8 2 bien citer la ref de l'article 
+
+Discuter de la library graphique à choisir (faire la liste prototype)
+
+argumenter HDF5 

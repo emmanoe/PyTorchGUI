@@ -1,0 +1,45 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{pdflscape}
+\usepackage{pdfpages}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\DeclareMathSizes{50}
+\usepackage{enumerate}
+
+\input{Geometry.tex}
+
+\begin{document}
+
+\input{Titlepage.tex}
+\newpage
+
+\tableofcontents
+
+
+\chapter{Context}
+\input{Contexte.tex}
+
+\chapter{Requirements Analysis}
+\input{RequirementsAnalysis.tex}
+\chapter{Architecture and Description of the Application}
+\input{ArchitectureEtDescriptionDuLogiciel.tex}
+
+\chapter{Functional analysis and tests}
+\input{AnalyseDuFonctionnementEtTests.tex}
+
+\chapter{Conclusion}
+\input{Conclusion.tex}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

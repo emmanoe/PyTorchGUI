@@ -1,0 +1,83 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{blindtext}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{pdflscape}
+\usepackage{pdfpages}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+
+%
+\input{Geometry.tex}
+ 
+ 
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+\input{Titlepage.tex}
+
+
+%---------------------------
+%----------Table of contents
+%---------------------------
+ 
+\tableofcontents
+
+\newpage
+
+%---------------------------
+%--------- Chapter 1 -------
+%---------------------------
+
+\chapter{Presentation of the project}
+\input{Introduction.tex}
+
+%---------------------------
+%--------- Chapter 2 -------
+%---------------------------
+\chapter{Tools}
+\input{Tools.tex}
+
+%---------------------------
+%--------- Chapter 3 -------
+%---------------------------
+\chapter{Existing Analysis}
+\input{ExistingAnalysis.tex}
+
+%---------------------------
+%--------- Chapter 4 -------
+%---------------------------
+\chapter{Requirements Elicitation}
+\input{RequirementsElicitations.tex}
+
+%---------------------------
+%--------- Chapter 5 -------
+%---------------------------
+\chapter{Project organization}
+\input{ProjectOrganisation.tex}
+
+%---------------------------
+%----------Bibliograpy------
+%---------------------------
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{references}
+\pagebreak
+
+%---------------------------
+%---------- Chapter 6-------
+%---------------------------
+\chapter{Annexes}
+\input{Annexes.tex}
+
+\end{document}
+
